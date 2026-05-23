@@ -108,19 +108,13 @@ COMMIT;
 CREATE OR REPLACE TRIGGER TRG_REGISTRO_50
 AFTER INSERT ON EMPLEADOS_H
 FOR EACH ROW
-
-DECLARE
-    V_TOTAL NUMBER;
-
 BEGIN
 
-    SELECT COUNT(*)
-    INTO V_TOTAL
-    FROM EMPLEADOS_H;
+    IF :NEW.ID = 50 THEN
 
-    IF V_TOTAL = 50 THEN
-
-        INSERT INTO LOG_REGISTRO_50(MENSAJE)
+        INSERT INTO LOG_REGISTRO_50(
+            MENSAJE
+        )
         VALUES(
             'Se insertó el registro número 50 correctamente'
         );
