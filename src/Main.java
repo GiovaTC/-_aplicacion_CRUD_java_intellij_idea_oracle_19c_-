@@ -1,15 +1,34 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
-    public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+import dao.EmpleadoDAO;
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+public class Main {
+
+    public static void main(String[] args) {
+
+        EmpleadoDAO dao =
+                new EmpleadoDAO();
+
+        // INSERTAR
+        dao.insertarEmpleado(
+                "Carlos",
+                "Backend Developer",
+                4500
+        );
+
+        // LISTAR
+        dao.listarEmpleados();
+
+        // ACTUALIZAR
+        dao.actualizarEmpleado(
+                1,
+                "Carlos Actualizado",
+                "Arquitecto Software",
+                7000
+        );
+
+        // ELIMINAR
+        dao.eliminarEmpleado(2);
+
+        // LISTAR NUEVAMENTE
+        dao.listarEmpleados();
     }
-}
+}   
