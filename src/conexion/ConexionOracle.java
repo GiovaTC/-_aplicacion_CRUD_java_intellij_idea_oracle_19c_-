@@ -17,9 +17,9 @@ public class ConexionOracle {
 
             con = DriverManager.getConnection(
 
-                    "jdbc:oracle:thin:@localhost:1521:XE",
+                    "jdbc:oracle:thin:@localhost:1521/orcl",
                     "SYSTEM",
-                    "12345"
+                    "Tapiero123"
 
             );
 
