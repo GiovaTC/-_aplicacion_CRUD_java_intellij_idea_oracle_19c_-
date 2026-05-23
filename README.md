@@ -3,8 +3,8 @@ Procedimientos Almacenados + Trigger + JDBC:
 
 <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/771aa78c-a224-408f-b127-1baa1a347118" />  
 
-<img width="2550" height="1079" alt="image" src="https://github.com/user-attachments/assets/e7bbcfcf-16b8-4c7c-ba25-0fd17915eefd" />    
-
+<img width="2555" height="1079" alt="image" src="https://github.com/user-attachments/assets/6d7b9847-6c3c-460a-bf91-e0b5221fbc03" />    
+    
 ```
 El siguiente proyecto permite realizar operaciones CRUD utilizando:
 Java
